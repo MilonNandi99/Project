@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<title>Mobile Universe</title>
+
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+	background-image: url("../images/bg_bulb.jpg");   /* bg_bulb.jpg is a picture available in static/images/ */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background: linear-gradient(to right, white, #f8dbdb, rgb(227, 249, 225));*/
+}
+
+.nav-link:hover {
+	color: violet;
+	font-weight: 500;
+}
+
+.reg {
+	border: 1px solid blue;
+	border-radius: 5px;
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+}
+</style>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<div class="container-fluid ">
+			<a class="navbar-brand text-primary" href="#"><i>Mobile
+					Universe Stock</i></a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active "
+						aria-current="page" href="/" style="color: #7FFF00">Home</a></li>
+					<li class="nav-item"><a class="nav-link text-white"
+						href="available_mobiles">Available Mobile</a></li>
+					<li class="nav-item"><a class="nav-link text-white"
+						href="my_mobiles">Top sales</a></li>
+				</ul>
+				<div class="reg">
+					<a class="nav-link text-white" id="reg" href="mobile_register">Add
+						New Mobile</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container text-left my-5">
+		<h1 style="color: white">
+			<i>Welcome to Mobile Universe</i><br> <i>Management page</i>
+		</h1>
+		<br><br><br><br>
+		
+
+        
+
+		<h3 style="color: white;">
+		     <i>Mobile Universe</i><br>
+			<i >Your one-stop destination</i><br>
+			<i>for the latest smart phones <br>and accessories.</i>
+		</h3>
+
+
+	</div>
